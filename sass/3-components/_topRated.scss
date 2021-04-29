@@ -16,8 +16,8 @@
 
         @include media(">phone","<tablet"){
 
-            width: 350px;
-            height: 350px;
+            width: 270px;
+            height: 270px;
 
         }
 
@@ -34,8 +34,8 @@ letter-spacing: -10px;
 
             @include media(">phone","<tablet"){
 
-             margin-top: 40px;
-             padding-left: 30px !important;
+             margin-top: 10px;
+             padding-left: 40px !important;
                 font-size: 7rem;
             }
 
@@ -56,8 +56,8 @@ letter-spacing: -10px;
         @include media(">phone","<tablet"){
 
 
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
 
         }
 
@@ -78,20 +78,42 @@ letter-spacing: -10px;
             // background-color: mediumblue;
             left: 65%;
             transform: translateX(-65%);
+
+
+            
+@include media(">phone","<tablet"){
+
+
+    top: -20%;
+
+
+
+   }
+
         }
 
         &--1{
 top: 50%;
 
-
 left: -4.5%;
 
 transform: translate(-4.5%,-50%);
 
+
+@include media(">phone","<tablet"){
+
+    left: -10%;
+
+    top: 15%;
+
+transform: translateX(-10%);
+
+
+   }
+
         }
 
         &--2{
-
 
 
             top: 50%;
@@ -120,7 +142,7 @@ transform: translateX(-70%);
 
 @include media(">phone","<tablet"){
 
- bottom: -16%;
+ bottom: -28%;
     
 }
 
@@ -194,9 +216,12 @@ font-size: 1.5rem;
     }
 
     .rightSideCol{
+        padding-left: 100px;
         @include media(">phone","<tablet"){
 
-padding: 100px 0 20px 0;
+padding: 100px 0 0px 40px !important;
+
+
         }
     }
 
