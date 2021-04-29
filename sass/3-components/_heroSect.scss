@@ -68,6 +68,7 @@ overflow: hidden;
 position: relative;
 z-index: 1;
 
+
     &-image{
         
 height: 100%;
@@ -76,13 +77,13 @@ width: 100%;
 background-image: url('https://i.ibb.co/HChK3WQ/cheerful-man-pointing-finger-left-advertise-product-1-removebg-preview.png');
 background-size: cover;
 background-position: -450px center;
-
+background-repeat: no-repeat;
 
 @include media(">phone","<tablet"){
 
     
     background-position: -380px center;
-    
+    // background-size: 150%;
 }
 
     }

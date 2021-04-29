@@ -48,6 +48,12 @@ body {
     width: 90%;
   }
 }
+.explore__heading {
+  padding: 0 20px 0 20px;
+}
+.explore__heading h1 {
+  font-size: 4.5rem;
+}
 .explore__heading p {
   font-size: 1.3rem;
 }
@@ -431,6 +437,7 @@ body {
   background-image: url("https://i.ibb.co/HChK3WQ/cheerful-man-pointing-finger-left-advertise-product-1-removebg-preview.png");
   background-size: cover;
   background-position: -450px center;
+  background-repeat: no-repeat;
 }
 @media (min-width: 321px) and (max-width: 767px) {
   .heroSect__rightSide-image {

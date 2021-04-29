@@ -26,6 +26,10 @@ top: 0;
     }
 
     &__heading{
+padding: 0 20px 0 20px;
+        & h1{
+            font-size: 4.5rem;
+        }
 
         & p{
             font-size: 1.3rem;
