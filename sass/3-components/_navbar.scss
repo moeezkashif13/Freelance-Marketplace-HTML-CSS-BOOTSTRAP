@@ -1,0 +1,19 @@
+
+
+
+.nav-link{
+    font-weight: 800;   
+    color: #000;
+    font-size: 1.3rem;
+}
+
+.navbar-toggler-icon{
+
+    &:active{
+        
+        transform: rotate(90deg);
+    
+    }
+
+
+}

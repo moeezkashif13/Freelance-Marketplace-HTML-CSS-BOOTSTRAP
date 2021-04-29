@@ -1,0 +1,52 @@
+.footer{
+
+    padding: 50px 0 80px 0 !important;
+
+&__ul{
+
+
+    & li{
+ 
+     & a{
+         width: 40px;
+         height: 40px;
+         border-radius: 50%;
+         display: block;
+         background-color: #fff;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 1.8rem;
+     
+            color: #213658;
+        }
+
+     .active{
+            background-color: #213658 !important;
+            color: #fff;
+     }
+     
+
+
+    }
+
+
+
+
+}
+
+
+
+&__items{
+
+    & li{
+        margin: 5px 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #7b889f;
+    }
+
+}
+
+
+}

@@ -1,0 +1,72 @@
+.reviews{
+
+    padding: 70px 0 100px 0;
+
+    @include media(">phone","<tablet"){
+        
+        padding: 35px 0 20px 0;
+
+                   }
+                   
+
+
+    &__heading{
+        @include media(">phone","<tablet"){
+
+font-size: 2.5rem;
+width: 100% !important;
+               
+           }
+           
+           
+    }
+
+    &__container{
+
+        
+        background-color: #fff;
+        width: 270px;
+        height: 220px;
+        border-radius: 15px;
+position: relative;
+
+
+
+        &-image{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: indigo;
+        
+
+            & img{
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+    
+    
+        &-mainReview{
+            font-size: 1.5rem;
+        }
+
+        
+        &-stars{
+position: absolute;
+bottom: 15%;
+
+            font-size: 1.6rem;
+
+        }
+        
+    }
+
+
+    
+        .greenTypeColor{
+            color: #7bf0cd;
+        }
+
+}

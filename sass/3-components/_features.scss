@@ -1,0 +1,106 @@
+.forPadding{
+    padding: 60px 0;
+
+}
+
+.features{
+
+    background-color: #f4f8fd;
+
+   @include media(">phone","<tablet"){
+    &__yourBusiness{
+        padding: 0  30px 0 0;
+        & h1{
+            font-size: 3rem;
+        }
+
+    }
+   }
+
+
+&__reviews{
+    & p{
+        font-size: 1.2rem;
+
+
+        @include media(">phone","<tablet"){
+            
+                font-size: 1.6rem;
+            
+           }
+
+
+    }
+}
+
+    &__person{
+
+        // position: relative;
+display: flex;
+justify-content: center;
+
+
+&-shape{
+            
+            border-radius: 80px;
+            width: 230px;
+            height: 360px;
+
+
+            @include media(">phone","<tablet"){
+                width: 200px;
+                height: 330px;
+            }
+
+            transform: rotate(45deg);
+            background-color: #916cf9;
+ 
+ 
+        }
+
+
+        &-otherShape{
+            
+            border-radius: 30px;
+            width: 250px;
+            height: 450px;
+            transform: rotate(0deg);
+            // background-color: #bbb7c8;
+            position: absolute;
+
+
+
+            top: 0;
+    
+
+        }
+
+
+
+        &-personImage{
+            // background-color: orange;
+            width: 100%;
+            left: 0;
+            height: 100%;
+            position: absolute;
+            top: -5%;
+            background-image: url('https://i.ibb.co/G3jfrzV/african-man-holding-ipad-compressed-removebg-preview.png');
+            background-size: 88%;
+
+            background-repeat: no-repeat;
+        background-position: 100px center;
+
+
+        @include media(">phone","<tablet"){
+
+            background-position: 50px center;
+
+        }
+
+
+        
+        }
+
+    }
+
+}

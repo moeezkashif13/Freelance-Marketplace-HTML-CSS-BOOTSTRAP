@@ -1,0 +1,95 @@
+
+.contact{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+margin: 30px auto 0 auto;
+padding: 30px 0;
+
+
+
+@include media('>phone','<tablet'){
+        margin: 0px 0 0px 0;
+padding: 20px 0 30px 0;
+
+    }
+
+
+    &__oneSide{
+
+        
+        & h4{
+            font-weight: 700;
+            font-size: 3rem;
+        }
+
+        & p{
+            font-size: 1.2rem;
+            font-weight: 500;
+
+        }
+
+    }
+
+
+    &__otherSide{
+margin-left: 70px;
+        & a{
+            background-color: #8667de;
+            border-radius: 15px;
+            font-size: 1.8rem;
+            color: #fff;
+            padding: 10px 35px 10px  35px;
+
+
+
+
+        }
+
+    }
+
+
+    @include media('>phone','<tablet'){
+
+
+       
+        &__oneSide{
+
+        
+            & h4{
+                font-weight: 700;
+                font-size: 1.5rem;
+            }
+    
+            & p{
+                font-size: 0.7rem;
+                font-weight: 500;
+    
+            }
+    
+        }
+    
+    
+        &__otherSide{
+    margin-left: 10px;
+            & a{
+                background-color: #8667de;
+                font-size: 1rem;
+                color: #fff;
+                padding: 0;
+                padding: 8px 22.5px 8px 22.5px !important;
+
+                                   
+
+            }
+    
+        }
+
+
+    }
+
+
+
+}
+

@@ -1,0 +1,88 @@
+.explore{
+
+    background-color: #f4f8fd;
+    padding: 80px 0;
+
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        background-color: #eff1fd;
+ 
+        right: 0;
+top: 0;
+
+
+@include media(">phone","<tablet"){
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
+
+    }
+
+    &__heading{
+
+        & p{
+            font-size: 1.3rem;
+        }
+
+    }
+
+    &__category{
+        background-color: #fff;
+
+
+
+        display: flex;
+
+        width: 200px;
+        height: 160px;
+
+        border-radius: 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        // padding: 10px 30px;
+        
+&-icon{
+    width: 35px;
+    height: 35px;
+ 
+    animation: iconsScale 2s infinite ease-in-out;
+    
+
+}
+
+
+
+
+    }
+
+}
+
+
+@keyframes iconsScale {
+    
+
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.5);
+    }
+
+
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+// #eff1fd

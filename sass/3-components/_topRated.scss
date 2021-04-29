@@ -1,0 +1,204 @@
+.topRated{
+
+    background-color: #213658;
+
+    &__bigCircle{
+        background-color: #2f4363;
+
+        width: 450px;
+        height: 450px;
+
+        border-radius: 50%;
+        position: relative;
+
+        @include flexAndProps;
+
+
+        @include media(">phone","<tablet"){
+
+            width: 350px;
+            height: 350px;
+
+        }
+
+
+        &-text{
+
+            font-size: 10rem;
+letter-spacing: -10px;
+            color: black;
+            -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 4px;
+            -webkit-text-stroke-color: #3be9b6;
+          
+
+            @include media(">phone","<tablet"){
+
+             margin-top: 40px;
+             padding-left: 30px !important;
+                font-size: 7rem;
+            }
+
+
+        }
+
+        &-smallCircle{
+
+            background-color: #384b69;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            flex-direction: column;
+       
+        @include flexAndProps;
+
+
+        @include media(">phone","<tablet"){
+
+
+            width: 250px;
+            height: 250px;
+
+        }
+
+
+        }
+    }
+
+
+    &__smallCircles{
+
+
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+
+        &--0{
+            // background-color: mediumblue;
+            left: 65%;
+            transform: translateX(-65%);
+        }
+
+        &--1{
+top: 50%;
+
+
+left: -4.5%;
+
+transform: translate(-4.5%,-50%);
+
+        }
+
+        &--2{
+
+
+
+            top: 50%;
+            right: -43%;
+
+            transform: translate(-43%,-50%);
+
+            @include media(">phone","<tablet"){
+display: none;
+
+            }
+
+        }
+
+
+        &--3{
+            
+bottom: -4%;
+
+display: flex;
+justify-content: flex-end;
+
+left: 70%;
+transform: translateX(-70%);
+
+
+@include media(">phone","<tablet"){
+
+ bottom: -16%;
+    
+}
+
+
+
+        }
+
+        &-image{
+
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+
+            & img{
+                border-radius: 50%;
+            }
+
+
+        }
+
+
+        &-details{
+            background-color: #fff;
+            margin-top: 10px;
+border-radius: 10px;
+            width: 150px;
+
+            padding: 15px 15px;
+// overflow: hidden;
+
+
+            
+            position: relative;
+
+
+            @include media(">phone","<tablet"){
+
+                width: 130px;
+                
+    
+            }
+
+
+            & h5{
+
+                font-weight: 700;
+                margin-left: 5px !important;
+            }
+
+        }
+
+
+        &-ratings{
+
+            
+@include flexAndProps(flex-end);
+
+font-size: 1.5rem;
+
+& i{
+
+    color: #3be9b6;
+}
+
+            
+            
+
+        }
+
+
+    }
+
+    .rightSideCol{
+        @include media(">phone","<tablet"){
+
+padding: 100px 0 20px 0;
+        }
+    }
+
+
+}

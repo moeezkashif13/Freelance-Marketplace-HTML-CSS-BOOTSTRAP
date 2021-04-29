@@ -1,0 +1,120 @@
+.heroSect{
+    background-color: #213658;
+position: relative;
+    // height: 20vh;
+
+overflow: hidden;
+
+
+// temproryyy
+
+
+// temproryyy
+
+
+&__fact{
+    @include media(">phone","<tablet"){
+
+        & h1{
+            font-size: 4rem;
+        }
+
+    }
+}
+
+    &::before{
+        content: '';
+                position: absolute;
+        top: -12%;
+                right: -12%;
+                width: 55%;
+                height: 100%;
+                background-color: #926df9;
+
+                border-radius: 250px;
+
+                transform: rotate(-30deg);
+            }
+
+
+            &::after{
+                content: '';
+                        position: absolute;
+                
+                        right: -10%;
+                        width: 65%;
+                        bottom: -25%;
+                        height: 80%;
+                        background-color: #3be9b6;
+                        border-radius: 150px;       
+                        transform: rotate(-25deg);
+        
+                    }
+    
+}
+
+
+.nav-link{
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.heroSect__rightSide{
+
+
+    width: 100%;
+    height: 100%;
+position: relative;
+z-index: 1;
+
+    &-image{
+        
+height: 100%;
+width: 100%;
+
+background-image: url('https://i.ibb.co/HChK3WQ/cheerful-man-pointing-finger-left-advertise-product-1-removebg-preview.png');
+background-size: cover;
+background-position: -450px center;
+
+
+@include media(">phone","<tablet"){
+
+    
+    background-position: -380px center;
+    
+}
+
+    }
+
+
+    &-icon{
+
+        // background-color: red;
+        width: 120px;
+        height: 120px;
+        position: absolute;
+top: 0;
+right: 0;
+
+background-image: url(/icons/Instagram_3d_Icon_generated-removebg-preview.png);
+background-size: cover;
+
+
+&--2{
+    background-image: url('https://i.ibb.co/ZxQ6v0s/Messenger-3d-Icon-generated-removebg-preview.png');
+
+right: 100%;
+top: 62%;
+
+}
+
+
+}
+
+
+
+
+
+
+}
