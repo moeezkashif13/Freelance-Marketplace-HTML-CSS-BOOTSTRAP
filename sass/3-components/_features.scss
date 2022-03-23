@@ -3,13 +3,29 @@
 
 }
 
+.amazingFeatures{
+
+    flex-direction: row;
+
+    @include media(">phone","<tablet"){
+
+        flex-direction: column !important;
+
+    }
+    
+}
+
 .features{
 
     background-color: #f4f8fd;
 
+
+
+    
    @include media(">phone","<tablet"){
     &__yourBusiness{
         padding: 0  30px 0 0;
+
         & h1{
             font-size: 3rem;
         }

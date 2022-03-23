@@ -1,6 +1,16 @@
+.topRatedTalent{
+    @include media(">tablet","<1199px"){
+
+    flex-wrap:nowrap ;
+    
+    }
+}
+
 .topRated{
 
     background-color: #213658;
+
+
 
     &__bigCircle{
         background-color: #2f4363;
@@ -59,6 +69,7 @@ letter-spacing: -10px;
             width: 200px;
             height: 200px;
 
+
         }
 
 
@@ -102,11 +113,11 @@ transform: translate(-4.5%,-50%);
 
 @include media(">phone","<tablet"){
 
-    left: -10%;
+    left: -13%;
 
-    top: 15%;
-
-transform: translateX(-10%);
+    top: 40%;
+    
+    transform: translateX(-13%);
 
 
    }

@@ -1,3 +1,9 @@
+.changeMarg{
+    @include media(">phone","<tablet"){
+        margin-top: 0px !important;
+    }
+}
+
 .heroSect{
     background-color: #213658;
 position: relative;
@@ -6,10 +12,6 @@ position: relative;
 overflow: hidden;
 
 
-// temproryyy
-
-
-// temproryyy
 
 
 &__fact{
